@@ -1,0 +1,47 @@
+<html lang="en"></html>
+
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page that appears in the browser tab -->
+    <title>Computer Engineered Scalable Search Engine Programmed with Ideal Technology</title>
+    <!-- Link to external JavaScript file (deferred loading to improve performance) -->
+    <script src="/code.js" defer></script>
+    <!-- Link to external CSS file to style the page -->
+    <link rel="stylesheet" href="/style.css" />
+    
+</head>
+<!-- Main content container -->
+<body>
+    <div id="content">
+        <!-- Header of the page -->
+        <h1>Try it out</h1>
+        
+        <!-- Text input field for search queries -->
+        <input id="searchbox" type="text" placeholder="Search here..." />
+        
+        <!-- Button to initiate the search action -->
+        <button id="searchbutton">Search</button>
+        <!-- Rounded switch -->
+        <form action="/selectAlgorithm" method="POST" id="radioButtons">
+            <p>Select your favorite ranking algorithm:</p>
+            <input type="radio" id="simple" name="rankingAlgorithm" value="SIMPLE">
+            <label for="simple">Simple Frequency</label>
+            <input type="radio" id="tfidf" name="rankingAlgorithm" value="TFIDF">
+            <label for="tfidf">TFIDF</label>
+          </form>
+          
+    </div>
+        
+    <!-- Empty div where the search results (URLs) will be displayed as clickable links and  -->
+    <div class="response">
+        <div id="responsesize"></div>
+        <div id="urllist"></div>
+    </div>
+    
+    <div class="matrix"></div>
+    <script src="code.js"></script>
+</body>
+
+</html>

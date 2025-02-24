@@ -1,0 +1,165 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: left;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(186,165,140)}
+
+
+/* Style for text input fields (input[type="text"]) */
+input[type="text"] {
+    padding: 10px; 
+    margin: 10px; 
+    border: solid 1px #dcdcdc; 
+    border-radius: 4px; /* Round the corners of the input box by 4px */
+    min-width: 200px; /* Ensure the input box is at least 200px wide */
+    transition: box-shadow 0.3s, border 0.3s; /* Apply smooth transitions to box-shadow and border on state changes */
+}
+
+input:focus {
+    outline-color: rgb(102,140,111);
+    }
+
+
+/* Main content container styling */
+#content {
+    margin: 50px auto;
+    margin-bottom: -50px;
+    max-width: 50%;
+    background: rgba(123,10,10,.5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Styling for the search box */
+#searchbox {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #969696;
+}
+
+/* Styling for the search button */
+#searchbutton {
+    padding: 10px 20px;
+    font-size: 1em;
+    height: 40px;
+    background-color: c60f0f;
+    color: rgb(33,60,24);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px #969696;
+    background-color: rgb(186,165,140);
+}
+/* Hover effect for the search button */
+#searchbutton:hover {
+    background-color: rgb(33,60,24);
+}
+
+/* Additional content styling */
+.response {
+    margin: 50px auto;
+    max-width: 50%;
+    background: rgb(123,10,10,.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border: 4px;
+    border-color: white;
+    border-radius: 8px ;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    color: rgb(102,140,111);
+}
+
+#responsesize {
+    font-weight: bold;
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+#urllist {
+    text-align: left; 
+    width: 100%;
+}
+
+/* Ensure list items have no bullets */
+#urllist ul {
+    list-style: none; /* Remove bullets from the unordered list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for links (anchor elements) */
+a {
+    color: rgb(186,165,140);
+    text-decoration: none;
+}
+
+/* Visited link color */
+a:visited {
+    color: rgb(102,140,111); /* Darker red for visited links */
+}
+
+/* Change link color when hovered */
+a:hover {
+    color: rgb(255, 255, 255); /* Slightly darker red on hover */
+}
+
+.matrix {
+    position: fixed; /* Make it fixed to cover the viewport regardless of scrolling */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%; /* Initially cover the viewport */
+    background: black;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none; /* Prevent interaction with the matrix layer */
+}
+
+/* Style for the green characters */
+.matrix span {
+    position: absolute;
+    top: -50px;
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+    animation: fall linear infinite;
+    white-space: nowrap;
+}
+
+/* Random animation delay and speed for the falling effect */
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+#radioButtons {
+    color: rgb(186,165,140)
+}
