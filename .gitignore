@@ -146,3 +146,5 @@ gradle-app.setting
 # End of https://www.toptal.com/developers/gitignore/api/java,gradle,git,visualstudiocode,osx,windows
 .fakedata/enwiki-large.txt
 data/enwiki-large.txt
+
+.fake
